@@ -5,7 +5,9 @@
   </head>
   <link href="Css/style.css" rel="stylesheet" type="text/css" />
   <body>
-    <img width="300" src="https://dietalibre.net/wp-content/uploads/2012/09/imc-hp-150pp-1024x794.jpg">
+    <p>Calculadora del índice de masa corporal (IMC)
+El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.<P>
+<hr>
     <form id="formulario" onsubmit="calcularIMC(); return false">
       <label for="nombre">Escribe tu NOMBRE:</label>
       <input type="text" id="nombre">
@@ -19,6 +21,31 @@
       <button type="submit">Calcular IMC</button>
       <p id="resultado"></p>
     </form>
+<hr>
+<table>
+      <caption>Tabla Informativa</caption>
+      <tr>
+        <th>Composición Corporal</th>
+        <th>Índice de masa corporal(IMC)</th>
+      </tr>
+      <tr>
+        <th>Peso inferior al normal</th>
+        <td>Menos de 18.5</td>
+      </tr>
+      <tr>
+        <th>Normal</th>
+        <td>18.5-24.9</td>
+      </tr>
+      <tr>
+        <th>Peso superior al normal</th>
+        <td>25.0-29.9</td>
+      </tr>
+      <tr>
+        <th>Obesidad</th>
+        <td>Más de 30.0</td>
+      </tr>
+    </table>
+
   <script src="Js/calc.js"></script>
   </body>
 </html>
