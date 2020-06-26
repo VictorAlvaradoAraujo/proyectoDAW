@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora Índice de Masa Corporal</title>
+  </head>
+  <link href="Css/style.css" rel="stylesheet" type="text/css" />
+  <body>
+    <img width="300" src="https://dietalibre.net/wp-content/uploads/2012/09/imc-hp-150pp-1024x794.jpg">
+    <form id="formulario" onsubmit="calcularIMC(); return false">
+      <label for="nombre">Escribe tu NOMBRE:</label>
+      <input type="text" id="nombre">
+      <br>
+      <label for="altura">Escribe tu ALTURA actual (cm):</label>
+      <input type="text" id="altura" required="required">
+      <br>
+      <label for="peso">Escribe tu PESO actual (kg):</label>
+      <input type="text" id="peso" required="required">
+      <br>
+      <button type="submit">Calcular IMC</button>
+      <p id="resultado"></p>
+    </form>
+  <script src="Js/calc.js"></script>
+  </body>
+</html>
