@@ -21,3 +21,18 @@ li a {
 li a:hover {
   background-color: #111111;
 }
+.banner{
+  display:block;
+  margin:auto;
+  width: 50%;
+  height: auto;
+}
+
+footer {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+
+}
