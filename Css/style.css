@@ -36,3 +36,9 @@ footer {
 
 
 }
+
+#cabecera{
+  background-color: #FFFF;
+  text-align: center;
+  padding: 1% 0 1% 0; 	
+}
