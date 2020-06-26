@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr" >
+  <head>
+    <meta charset="utf-8">
+    
+    <link href="Css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/positioning.css" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+    
+  
+
+    <title>Contáctenos</title>
+    
+    <meta name="author" content="FreeAssange" />
+    <meta name="keywords" content="contacto" />
+
+  </head>
+  <body>
+    
+      <header>
+        <h1>Formulario de contacto</h1>
+      </header>
+      
+      
+      <nav id="navegacion" >
+        
+        <ul>
+          <li><a>Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section id="cabecera">
+        <img src="img/estilodevida.png" alt="Imagen estilo de vida" />
+      </section>
+     
+	 <form>
+      <p>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+      </p>
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+      </p>
+      <p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </p>
+      <p>
+        Género:
+        <input type="radio" id="masculino" name="gender" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="gender" value="femenino">
+        <label for="femenino">Femenino</label>
+      </p>
+      <p>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+          <option value="dudas">Dudas</option>
+          <option value="sugerencias" selected>Sugerencias</option>
+          <option value="infocomercial" >Información comercial</option>
+		  <option value="publicidad" >Publicidad</option>
+        </select>
+      </p>
+      <p>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="10" cols="30"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
+        <label for="norobot"> No soy un robot</label><br>
+        <input type="checkbox" id="boletines" name="boletines" value="boletines">
+        <label for="boletines">  Deseo recibir boletines</label><br>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+	 
+
+      <footer>
+        <p>Copyright &copy; 2020 - FreeAssange </p>
+      </footer>
+
+     
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
