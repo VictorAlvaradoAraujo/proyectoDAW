@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #52BE80
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+.banner{
+  display:block;
+  margin:auto;
+  width: 50%;
+  height: auto;
+}
+
+footer {
+
+  bottom: 0;
+  width: 100%;
+
+
+}
+
+#cabecera{
+  background-color: #FFFF;
+  text-align: center;
+  padding: 1% 0 1% 0; 	
+}
