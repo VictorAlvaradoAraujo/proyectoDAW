@@ -21,12 +21,7 @@ li a {
 li a:hover {
   background-color: #111111;
 }
-.banner{
-  display:block;
-  margin:auto;
-  width: 50%;
-  height: auto;
-}
+ 
  #clients {
      padding: 60px 0
  }
@@ -61,6 +56,11 @@ li a:hover {
  #clients img {
      transition: all 0.4s ease-in-out
  }
+ody{
+  background:#000;
+}
+
+
 footer {
 
   position: absolute;
