@@ -1,12 +1,26 @@
-$('section.awSlider .carousel').carousel({
-	pause: "hover",
-  interval: 2000
-});
+var slideIndex = 1;
+showSlides(slideIndex);
 
-var startImage = $('section.awSlider .item.active > img').attr('src');
-$('section.awSlider').append('<img src="' + startImage + '">');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-$('section.awSlider .carousel').on('slid.bs.carousel', function () {
- var bscn = $(this).find('.item.active > img').attr('src');
-	$('section.awSlider > img').attr('src',bscn);
-});
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
