@@ -1,5 +1,20 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+* {
+	box-sizing: border-box
+	padding: 0;
+	margin: 0;
+}
+#header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+	font-family: sans-serif;
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+
+}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -95,28 +110,35 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #52BE80
+ 
+.menu-bar{
+	background: rgba(20, 00,20,0.70);
+	text-align: center;
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: white;
 }
 
-li {
-  float: left;
+.menu-bar ul li{
+	
+	margin: 35px;
+	padding: 15px;
 }
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+.menu-bar ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.38em; 
+	
 }
+.active, .menu-bar ul li:hover{
+	background: rgba(106, 253, 128, 0.50);
+	border-radius: 5px;
+}
+.menu-bar .fa{
+	margin-right: 15px;
 
-li a:hover {
-  background-color: #111111;
 }
  
  #clients {
@@ -157,5 +179,51 @@ ody{
   background:#000;
 }
 
+.content-separator, .archive-separator {
+	background: #D5D5D5;
+	clear: both;
+	color: #FFE;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	height: 1px;	
+}
+.content-separator {margin: 20px 0;}
+.archive-separator {margin: 10px 0;}
+
+.col3 {width: 32%;}
+.column-content {
+	padding: 14px 16px;
+}
+
+.post a {text-decoration: none;}
+.post a:hover {text-decoration: underline;}
+
+.post img.left, .post img.right {margin-bottom: 0;}
+
+.post-date {
+	color: #777;
+	margin: 2px 0 10px;
+}
+.post-date a {color: #444;}
+
+.post-title h1, .post-title h2, .post-title h3 {margin-bottom: 0;}
+
+.post-meta {
+	background: #F6F6F6;
+	border: 1px solid #DDD;
+	color: #777;
+	padding: 6px 10px;
+}
+.post-meta a {color: #345; }
+.post-meta a:hover {color: #001;}
+
+.post-body {font-size: 1.1em;}
+.post-body a {color: #039;}
+.post-body a:hover {color: #039;}
+
+.post-body img.left, .post-body img.right {margin-bottom: 1em;}
+
+ 
 
  
