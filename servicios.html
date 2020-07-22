@@ -9,29 +9,42 @@
  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+
  <title>Titulo</title>
     
     <meta name="author" content="Nombre del grupo" />
  
 
   </head>
-  <body>
-	<div class="container-fluid">
-	<header>   
-	 <nav id="navegacion">
+  <body class="bg-light">
+
+<!-- navbar-->
+<header id="header">
+	<nav id="navegacion" class="menu-bar" >
 	      <ul>
-	        <li><a href="servicios.html">SERVICIOS </a></li>
-	        <li><a href="tienda.html">TIENDA</a></li>
-	        <li><a href="Motivacion.html">MOTIVACION</a></li>
-	        <li><a href="quienesSomos.html">¿QUIENES SOMOS?</a></li>
-	        <li><a href="contacto.html">CONTACTENOS</a></li>
+		<li class="active"><a href="index.html"><i class="fa fa-home"></i>Principal</a></li>
+	        <li><a href="servicios.html"><i class="fa fa-diamond"></i>Servicios </a></li>
+	        <li><a href="tienda.html"><i class="fa fa-shopping-cart"></i>Tienda</a></li>
+	        <li><a href="Motivacion.html"><i class="fa fa-star"></i>Motivación</a></li>
+	        <li><a href="quienesSomos.html"><i class="fa fa-users"></i>¿Quienes somos?</a></li>
+	        <li><a href="contacto.html"><i class="fa fa-address-book"></i>Conctactenos</a></li>
+            <li>
+            <form class="form-inline mr-auto">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="">
+            <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Buscar</button>
+            </form>
+            </li>
+
+
+
+
+
 	      </ul>
-	    </nav>
-	</header>   
-    
- 
- 
+	</nav>
+</header>
+
+<section id="services">
+
     <!-- Page Features -->
     <div class="row text-center">
 
@@ -89,36 +102,52 @@
 
     </div>
     <!-- /.row -->
-<p>rutinas de ejercicios<p>
-<p>planes alimenticios<p>
-<section id="contenido" class="row">
-            <div id="profesores" class="col-12 col-sm-6">
-                <h3 class="tituloseccion">Calculadora del índice de masa corporal (IMC)</h3>
-<p>El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.<P>
-<hr>
-<p>Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso [kg]/ estatura [m2]). Según el Instituto Nacional del Corazón, los Pulmones y la Sangre de los Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con la calculadora que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en la tabla que aparece debajo de la calculadora.</p>
+</section>
 
+
+<section id="caltxt">
+    <h3 class="tituloseccion">Calculadora del índice de masa corporal (IMC)</h3>
+    <p>El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.<P>
+    <hr>
+    <p>Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso [kg]/ estatura [m2]). Según el Instituto Nacional del Corazón, los Pulmones y la Sangre de los Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con la calculadora que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en la tabla que aparece debajo de la calculadora.</p>
+</section>
 <!-- calculadora -->
 <hr>
-    <form id="formulario" onsubmit="calcularIMC(); return false">
+    <section id="calc"  class="row">
+    <form class="" id="formulario" onsubmit="calcularIMC(); return false">
+
+      <div class="form-group col-md-4 offset-md-4 mt-2">
       <label for="nombre">Escribe tu NOMBRE:</label>
       <input type="text" id="nombre">
+      </div>
       <br>
-      <label for="altura">Escribe tu ALTURA actual (cm):</label>
-      <input type="text" id="altura" required="required">
+      
+      <div class="form-group col-md-4 offset-md-4 mt-2">
+      <label for="altura" >Escribe tu ALTURA actual (cm):</label>
+      <input type="number" id="altura" required="required">
+      </div>
       <br>
-      <label for="peso">Escribe tu PESO actual (kg):</label>
-      <input type="text" id="peso" required="required">
-      <br>
+      
+      <div class="form-group col-md-4 offset-md-4 mt-2"> 
+      <label for="peso" >Escribe tu PESO actual (kg):</label>
+      <input type="number"  id="peso" required="required"><br>
+      </div>
+      <div class="form-group col-md-4 offset-md-4 mt-2">
+
       <button type="submit">Calcular IMC</button>
       <p id="resultado"></p>
+      </div>
+      <br>
+
+     
     </form>
+    </section>
 <hr>
 <!--end calculadora -->
 
 
-<caption>Tabla Informativa</caption>
-<table class="table table-hover"  class="col-12 col-sm-6">
+<h1>Tabla Informativa</h1>
+<table class="table table-hover col-12 col-sm-6">
       <tr>
         <th scope="col">Composición Corporal</th>
         <th scope="col">Índice de masa corporal(IMC)</th>
@@ -143,15 +172,18 @@
 
  
 
-</section>
+
 <!-- /calculadora -->
 
-  </div>
-    <footer>
-      <p>Copyright &copy; 2020 - FreeAssange</p>
-    </footer>
+<footer class="page-footer font-small blue">
 
-</div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Copyright &copy; 2020 - FreeAssange
+
+  </div>
+  <!-- Copyright -->
+
+</footer>
   <!-- Bootstrap core JavaScript -->
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
