@@ -22,7 +22,7 @@
 
         html,
       body {
-        height:100%;
+        height: 100%;
         margin: 0;
         padding: 0;
       }
@@ -44,7 +44,7 @@
       
       
       <nav id="navegacion" >
-        
+
         <ul>
           <li><a>Contacto</a></li>
         </ul>
@@ -56,27 +56,34 @@
 
     <!--The div element for the map -->
 
-	 <form class="form-row">
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+	 <form>
+      <p>
         <label for="nombres">Nombres:</label>
         <input type="text" id="nombres" name="nombres" required>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <label for="apellidos">Apellidos:</label>
         <input type="text" id="apellidos" name="apellidos" required>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <label for="correo">Correo electrónico:</label>
         <input type="email" id="correo" name="correo" required>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
+         <label for="start">Fecha de nacimiento:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="1940-01-01" max="2020-12-31">
+         <p>
+      <p>
         Género:
         <input type="radio" id="masculino" name="gender" value="masculino">
         <label for="masculino">Masculino</label>
         <input type="radio" id="femenino" name="gender" value="femenino">
         <label for="femenino">Femenino</label>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <label for="categoria">Categoria:</label>
         <select id="categoria" name="categoria">
           <option value="dudas">Dudas</option>
@@ -84,24 +91,24 @@
           <option value="infocomercial" >Información comercial</option>
 		  <option value="publicidad" >Publicidad</option>
         </select>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <label for="mensaje">Mensaje:</label><br>
         <textarea id="mensaje" name="mensaje" rows="10" cols="30"></textarea>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
         <label for="norobot"> No soy un robot</label><br>
         <input type="checkbox" id="boletines" name="boletines" value="boletines">
         <label for="boletines">  Deseo recibir boletines</label><br>
-      </div>
-      <div class="form-group col-md-4 offset-md-4 mt-2">
+      </p>
+      <p>
         <input type="submit" value="Enviar">
-      </div>
+      </p>
     </form>
 <h1>Hubicación</h1>
 
-  <div id="map" class="col-md-4 offset-md-4 mt-2"></div>
+  <div id="map"></div>
 
       <footer>
         <p>Copyright &copy; 2020 - FreeAssange </p>
