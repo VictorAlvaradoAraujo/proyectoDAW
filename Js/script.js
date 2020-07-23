@@ -1,3 +1,6 @@
+
+
+/* Parael carrusel */
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -8,6 +11,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 
 function showSlides(n) {
   var i;
@@ -24,3 +28,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+/*  para la api de google maps*/
+      "use strict";
+
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: {
+            lat: -34.397,
+            lng: 150.644
+          },
+          zoom: 8
+        });
+      }

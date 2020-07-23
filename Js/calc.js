@@ -8,11 +8,11 @@ function calcularIMC() {
   var clasificacion;
   
   if (imc < 18.5) {
-    clasificacion = 'estás muy delgado';
+    clasificacion = 'Estás muy delgado';
   } else if (imc < 25) {
-    clasificacion = 'estás saludable';
+    clasificacion = 'Estás saludable';
   } else {
-    clasificacion = 'tienes sobrepeso';
+    clasificacion = 'Tienes sobrepeso';
   }
   
   var respuesta = 'Hola '+nombre+', tu IMC es ' + imc + ' y tu ' + clasificacion;
