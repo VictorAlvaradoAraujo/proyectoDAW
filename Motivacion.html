@@ -3,13 +3,29 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Motivación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="Css/style.css" rel="stylesheet" type="text/css" />
+<!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
 
-  <!-- Bootstrap core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
+  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <script async src="https://cse.google.com/cse.js?cx=000888210889775888983:pqb3ch1ewhg"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/buscador.css">
     <link href="css/motivacion.css" rel="stylesheet" type="text/css" />
 
     <meta name="author" content="FreeAssange"/>
@@ -23,16 +39,58 @@
 
 <body>
   <!-- navbar-->
-  <header>
-    <nav id="navegacion">
-      <ul>
-        <li><a href="index.html">PRINCIPAL</a></li>
-        <li><a href="Videos.html">VIDEOS</a></li>
-        <li><a href="Playlist.html">PLAYLIST</a></li>
-        <li><a href="Testimonios.html">TESTIMONIOS</a></li>
-      </ul>
+ <header>
+    <nav id="headernav" class="menu-bar row navbar navbar-expand-lg navbar-light col-md-12">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">LoseFat</a>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active"><a href="index.html"><i class="fa fa-home"></i>Principal</a></li>
+          <li class="nav-item"><a href="servicios.html"><i class="fa fa-diamond"></i>Servicios </a></li>
+          <li class="nav-item"><a href="tienda.html"><i class="fa fa-shopping-cart"></i>Tienda</a></li>
+          <li class="nav-item"><a href="Motivacion.html"><i class="fa fa-star"></i>Motivación</a></li>
+          <li class="nav-item"><a href="quienesSomos.html"><i class="fa fa-users"></i>¿Quienes somos?</a></li>
+          <li class="nav-item"><a href="contacto.html"><i class="fa fa-address-book"></i>Conctactenos</a></li>
+
+          <form class="form-inline mr-auto">
+
+
+          </form>
+          </li>
+        </ul>
+
+      </div>
+      <div id="ctn-icon-search">
+        <i class="fas fa-search" id="icon-search"></i>
+      </div>
     </nav>
   </header>
+
+
+
+  <div id="ctn-bars-search">
+    <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+  </div>
+
+  <ul id="box-search">
+    <li><a href="servicios.html"><i class="fas fa-search"></i>Servicios</a></li>
+    <li><a href="tienda.html"><i class="fas fa-search"></i>Tienda</a></li>
+    <li><a href="Motivacion.html"><i class="fas fa-search"></i>Motivacion</a></li>
+    <li><a href="quienesSomos.html"><i class="fas fa-search"></i>Quienes Somos?</a></li>
+    <li><a href="contacto"><i class="fas fa-search"></i>Conctactenos</a></li>
+    <li><a href="Playlist"><i class="fas fa-search"></i>Playlist</a></li>
+    <li><a href="Videos"><i class="fas fa-search"></i>Videos</a></li>
+    <li><a href="Testimonios"><i class="fas fa-search"></i>Testimonios</a></li>
+  </ul>
+
+  <div id="cover-ctn-search"></div>
+
+  <div class="container-fluid">
+    <!-- navbar-->
 
   <h1 id="titulo">MOTIVACION</h1>
 
@@ -71,16 +129,58 @@
   </section>
 
 <!-- Footer -->
-<footer class="page-footer font-small blue">
+    <footer class="page-footer font-small special-color-dark pt-4 bg-light">
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Copyright &copy; 2020 - FreeAssange 
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
+      <!-- Footer Elements -->
+      <div class="container">
 
-</footer>
-<!-- Footer -->
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Form -->
+            <form method="get" action="http://google.com/search">
+
+              <input type="text" name="q" required autofocus>
+              <input type="submit" value="Google search">
+
+            </form>
+            <!-- Form -->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <form class="input-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+              </div>
+            </form>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Copyright &copy; 2020 - FreeAssange
+
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+	
+	
  <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
