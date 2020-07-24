@@ -8,6 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+
 }
 
 #ctn-icon-search i{
