@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Contáctenos</title>
+  <title>Registro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="Css/contacto.css" rel="stylesheet" type="text/css" />
+  <link href="Css/registro.css" rel="stylesheet" type="text/css" />
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -26,37 +26,10 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/buscador.css">
     
-    <link href="Css/contacto.css" rel="stylesheet" type="text/css" />
     <link href="Css/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnWXJ3jI48m4Q1ZynT5Tbe1cg8_634eos&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <style>
-      *{
-         margin:0;
-         padding:0;
-      }
-      #map {
-        height: 50%;
-        width: 75%;
-      }
-
-        html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-
-  
-
-    <title>Contáctenos</title>
     
     <meta name="author" content="FreeAssange" />
-    <meta name="keywords" content="contacto" />
+    <meta name="keywords" content="registro" />
 
   </head>
   <body>
@@ -110,74 +83,55 @@
 
   <div class="container-fluid"></div>
   
-  <p>
-	  <div>
-	  <h1 id="titulo">Formulario de contacto</h1>
-	  </div>
-  </p>
 
-      <section id="cabecera">
-        <img src="assets/img/estilodevida.png" alt="Imagen estilo de vida" />
-      </section>
-
-    <!--The div element for the map -->
-
-	 <form class="formulario" >
-      <p>
-        <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" name="nombres" required>
-      </p>
-      <p>
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required>
-      </p>
-      <p>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-      </p>
-      <p>
-         <label for="start">Fecha de nacimiento:</label>
-
-<input type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="1940-01-01" max="2020-12-31">
-         <p>
-      <p>
-        Género:
-        <input type="radio" id="masculino" name="gender" value="masculino">
-        <label for="masculino">Masculino</label>
-        <input type="radio" id="femenino" name="gender" value="femenino">
-        <label for="femenino">Femenino</label>
-      </p>
-      <p>
-        <label for="categoria">Categoria:</label>
-        <select id="categoria" name="categoria">
-          <option value="dudas">Dudas</option>
-          <option value="sugerencias" selected>Sugerencias</option>
-          <option value="infocomercial" >Información comercial</option>
-		  <option value="publicidad" >Publicidad</option>
-        </select>
-      </p>
-      <p>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="10" cols="30"></textarea>
-      </p>
-      <p>
-        <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
-        <label for="norobot"> No soy un robot</label><br>
-        <input type="checkbox" id="boletines" name="boletines" value="boletines">
-        <label for="boletines">  Deseo recibir boletines</label><br>
-      </p>
-      <p>
-        <input type="submit" value="Enviar">
-      </p>
-    </form>
+	<div>
 	
-	<p>
-		<h1 id="titulo">Ubicación</h1>
-	</p>
+	<ul class="stepper" id="feedback-step">
+	  <li class="step active">
+		<div data-step-label="It's just a second..." class="step-title waves-effect waves-dark">Step 1</div>
+		<div class="step-new-content">
+		  <div class="row">
+			<div class="md-form col-12 ml-auto">
+			  <input id="email-feedback" type="email" class="validate form-control" required>
+			  <label for="email-feedback">Your e-mail</label>
+			</div>
+		  </div>
+		  <div class="step-actions">
+			<button class="waves-effect waves-dark btn btn-sm btn-primary next-step" data-feedback="someFunction">CONTINUE</button>
+		  </div>
+		</div>
+	  </li>
+	  <li class="step">
+		<div class="step-title waves-effect waves-dark">Step 2</div>
+		<div class="step-new-content">
+		  <div class="row">
+			<div class="md-form col-12 ml-auto">
+			  <input id="password-feedback" type="password" class="form-control validate" required>
+			  <label for="password-feedback">Your password</label>
+			</div>
+		  </div>
+		  <div class="step-actions">
+			<button class="waves-effect waves-dark btn btn-sm btn-primary next-step" data-feedback="someFunction">CONTINUE</button>
+			<button class="waves-effect waves-dark btn btn-sm btn-secondary previous-step">BACK</button>
+		  </div>
+		</div>
+	  </li>
+	  <li class="step">
+		<div class="step-title waves-effect waves-dark">Step 3</div>
+		<div class="step-new-content">
+		  Finish!
+		  <div class="step-actions">
+			<button class="waves-effect waves-dark btn btn-sm btn-primary m-0 mt-4" type="button">SUBMIT</button>
+		  </div>
+		</div>
+	  </li>
+	</ul>
+	
+	</div>
+	
+	</body>
 
-  <div id="map"></div>
+
 
       <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4 bg-light">
@@ -233,7 +187,8 @@
 
 
 
-
+   
+  <script src="Js/registro.js"></script>
   <script src="js/buscador.js"></script>
     <script src="Js/script.js"></script>
   </body>
