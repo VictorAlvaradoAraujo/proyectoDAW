@@ -115,7 +115,7 @@ p{color: #ffffff; font-family: 'Open Sans Condensed', sans-serif;
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-ul {
+#nav2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -123,11 +123,11 @@ ul {
   background-color: #52BE80
 }
 
-li {
+.header2 {
   float: left;
 }
 
-li a {
+.header2 > a {
   display: block;
   color: white;
   text-align: center;
@@ -135,7 +135,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.header2 > a:hover {
   background-color: #111111;
 }
  
@@ -173,9 +173,5 @@ li a:hover {
  #clients img {
      transition: all 0.4s ease-in-out
  }
-ody{
-  background:#000;
-}
-
 
  

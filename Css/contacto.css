@@ -3,9 +3,6 @@ li {
   float: left;
 }
 
-
-li a:hover {
-  background-color: #111111;
 }
 .banner{
   display:block;
