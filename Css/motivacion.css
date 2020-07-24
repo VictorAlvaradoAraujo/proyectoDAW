@@ -115,6 +115,29 @@ p{color: #ffffff; font-family: 'Open Sans Condensed', sans-serif;
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+#nav2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #52BE80
+}
+
+.header2 {
+  float: left;
+}
+
+.header2 > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header2 > a:hover {
+  background-color: #111111;
+}
  
  #clients {
      padding: 60px 0
