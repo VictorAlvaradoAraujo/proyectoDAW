@@ -21,6 +21,15 @@ body {
 
 
 }
+
+div.container1{
+  
+    display: flex;
+    justify-content: center;
+  
+
+
+}
 #map {
         height: 40%;
         width: 60%;
