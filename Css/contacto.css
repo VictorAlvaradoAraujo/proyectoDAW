@@ -21,3 +21,20 @@ footer {
   text-align: center;
   padding: 1% 0 1% 0; 	
 }
+
+#map{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#titulo {
+  margin:auto;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.formulario {
+  margin:auto;
+  vertical-align:middle;
+  text-align:center;
+}
