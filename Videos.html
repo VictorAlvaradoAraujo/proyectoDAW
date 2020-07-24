@@ -29,6 +29,8 @@
     <link href="css/motivacion.css" rel="stylesheet" type="text/css" />
 
     <meta name="author" content="FreeAssange"/>
+  
+  <title>Motivacion</title>
 
   <meta name="author" content="FreeAssange" />
   <meta name="keywords" content="Motivacion" />
@@ -38,12 +40,11 @@
 <body>
   <!-- navbar-->
  <header>
-     <nav id="headernav" class="menu-bar row navbar navbar-expand-lg navbar-light col-md-12">
-      <a class="navbar-brand" href="index.html" style="padding:50px; color:white; font-size:32px" >LoseFat   </a>
+    <nav id="headernav" class="menu-bar row navbar navbar-expand-lg navbar-light col-md-12">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
+        <a class="navbar-brand" href="#">LoseFat</a>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -55,19 +56,26 @@
           <li class="nav-item"><a href="quienesSomos.html"><i class="fa fa-users"></i>¿Quienes somos?</a></li>
           <li class="nav-item"><a href="contacto.html"><i class="fa fa-address-book"></i>Conctactenos</a></li>
 
+          <form class="form-inline mr-auto">
 
+
+          </form>
+          </li>
         </ul>
 
       </div>
-
-
+	  
+      <div id="ctn-icon-search">
+        <i class="fas fa-search" id="icon-search"></i>
+      </div>
+	  
+	  
     </nav>
   </header>
 
 
-  <div id="ctn-icon-search">
 
-  <div id="ctn-bars-search" class="row">
+  <div id="ctn-bars-search">
     <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
   </div>
 
@@ -76,10 +84,10 @@
     <li><a href="tienda.html"><i class="fas fa-search"></i>Tienda</a></li>
     <li><a href="Motivacion.html"><i class="fas fa-search"></i>Motivacion</a></li>
     <li><a href="quienesSomos.html"><i class="fas fa-search"></i>Quienes Somos?</a></li>
-    <li><a href="contacto.html"><i class="fas fa-search"></i>Conctactenos</a></li>
-    <li><a href="Playlist.html"><i class="fas fa-search"></i>Playlist</a></li>
-    <li><a href="Videos.html"><i class="fas fa-search"></i>Videos</a></li>
-    <li><a href="Testimonios.html"><i class="fas fa-search"></i>Testimonios</a></li>
+    <li><a href="contacto"><i class="fas fa-search"></i>Conctactenos</a></li>
+    <li><a href="Playlist"><i class="fas fa-search"></i>Playlist</a></li>
+    <li><a href="Videos"><i class="fas fa-search"></i>Videos</a></li>
+    <li><a href="Testimonios"><i class="fas fa-search"></i>Testimonios</a></li>
   </ul>
 
   <div id="cover-ctn-search"></div>
@@ -101,7 +109,7 @@
   <h1 id="titulo">VIDEOS</h1>
 
   <!--banner-->
-  <div>
+  <section>
   
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -143,7 +151,7 @@
       </a>
     </div>
 
-  </div>
+  </section>
 
 <!-- Footer -->
     <footer class="page-footer font-small special-color-dark pt-4 bg-light">
@@ -174,7 +182,7 @@
 
             <form class="input-group">
               <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email"
-            >
+                aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
               </div>
@@ -196,14 +204,13 @@
       <!-- Copyright -->
 
     </footer>
-
-</div>
+	
+	
  <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <script src="js/buscador.js"></script>
   </body>
 </html>
