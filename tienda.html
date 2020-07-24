@@ -7,10 +7,25 @@
     <link href="Css/style.css" rel="stylesheet" type="text/css" />
     <link href="Css/tienda.css" rel="stylesheet" type="text/css" />
 
- <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+
+  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  <script async src="https://cse.google.com/cse.js?cx=000888210889775888983:pqb3ch1ewhg"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/buscador.css">
 
  <title>Titulo</title>
     
@@ -21,16 +36,56 @@
   <body class="bg-light">
 	<div class="container-fluid">
 	<header id="navegation">   
-	 <nav id="navegacion">
-	      <ul>
-	        <li><a href="servicios.html">SERVICIOS </a></li>
-	        <li><a>TIENDA</a></li>
-	        <li><a href="Motivacion.html">MOTIVACION</a></li>
-	        <li><a href="quienesSomos.html">¿QUIENES SOMOS?</a></li>
-	        <li><a href="contacto.html">CONTACTENOS</a></li>
-	      </ul>
-	    </nav>
+	 <nav id="headernav" class="menu-bar row navbar navbar-expand-lg navbar-light col-md-12">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">LoseFat</a>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item"><a href="index.html"><i class="fa fa-home"></i>Principal</a></li>
+          <li class="nav-item"><a href="servicios.html"><i class="fa fa-diamond"></i>Servicios </a></li>
+          <li class="nav-item active"><a href="tienda.html"><i class="fa fa-shopping-cart"></i>Tienda</a></li>
+          <li class="nav-item"><a href="Motivacion.html"><i class="fa fa-star"></i>Motivación</a></li>
+          <li class="nav-item"><a href="quienesSomos.html"><i class="fa fa-users"></i>¿Quienes somos?</a></li>
+          <li class="nav-item"><a href="contacto.html"><i class="fa fa-address-book"></i>Conctactenos</a></li>
+
+          <form class="form-inline mr-auto">
+
+
+          </form>
+          </li>
+        </ul>
+
+      </div>
+      <div id="ctn-icon-search">
+        <i class="fas fa-search" id="icon-search"></i>
+      </div>
+    </nav>
 	</header>   
+	
+	<div id="ctn-bars-search">
+    <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+  </div>
+
+  <ul id="box-search">
+    <li><a href="servicios.html"><i class="fas fa-search"></i>Servicios</a></li>
+    <li><a href="tienda.html"><i class="fas fa-search"></i>Tienda</a></li>
+    <li><a href="Motivacion.html"><i class="fas fa-search"></i>Motivacion</a></li>
+    <li><a href="quienesSomos.html"><i class="fas fa-search"></i>Quienes Somos?</a></li>
+    <li><a href="contacto"><i class="fas fa-search"></i>Conctactenos</a></li>
+    <li><a href="Playlist"><i class="fas fa-search"></i>Playlist</a></li>
+    <li><a href="Videos"><i class="fas fa-search"></i>Videos</a></li>
+    <li><a href="Testimonios"><i class="fas fa-search"></i>Testimonios</a></li>
+  </ul>
+
+  <div id="cover-ctn-search"></div>
+
+  <div class="container-fluid">
+  
+  
     	<section id="pricing" class="padd-section text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
     <div class="container">
         <div class="section-title text-center">
@@ -115,8 +170,56 @@
 
 </div>
 
-    <footer>
-      <p>Copyright &copy; 2020 - FreeAssange</p>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4 bg-light">
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Form -->
+            <form method="get" action="http://google.com/search">
+
+              <input type="text" name="q" required autofocus>
+              <input type="submit" value="Google search">
+
+            </form>
+            <!-- Form -->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <form class="input-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+              </div>
+            </form>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Copyright &copy; 2020 - FreeAssange
+
+      </div>
+      <!-- Copyright -->
+
     </footer>
 
 
